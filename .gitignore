@@ -205,3 +205,32 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ==========================================
+# PFA09 - SPECIFIC STUFF (RGPD & Grosse Volumétrie)
+# ==========================================
+
+# 1. Données brutes (Ne jamais push les voix du patient !)
+data/audios/
+data/*.wav
+data/*.json
+!data/dummy_dataset.json  # Optionnel : garder juste un fichier vide ou factice pour l'exemple
+
+# 2. Résultats des benchmarks (Générés localement)
+results/
+benchmark_asr/results/
+*.csv
+
+# 3. Poids des modèles (Pour la Phase 1.4 de Fine-Tuning)
+# Ne pas push les modèles HuggingFace ou les poids LoRA
+*.pt
+*.bin
+*.safetensors
+*.ckpt
+checkpoints/
+models/
+runs/
+
+# 4. OS générés (Classique mais toujours utile)
+.DS_Store
+Thumbs.db

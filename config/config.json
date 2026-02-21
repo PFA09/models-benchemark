@@ -1,0 +1,19 @@
+{
+    "models": [
+        {
+            "id": "whisper-tiny-fr",
+            "type": "whisper",
+            "hf_path": "openai/whisper-tiny",
+            "language": "fr"
+        },
+        {
+            "id": "wav2vec2-french-xlsr",
+            "type": "wav2vec2",
+            "hf_path": "jonatasgrosman/wav2vec2-large-xlsr-53-french",
+            "language": "fr"
+        }
+    ],
+    "dataset_path": "data/dataset.json",
+    "audio_folder": "data/audios/",
+    "output_folder": "results/"
+}
